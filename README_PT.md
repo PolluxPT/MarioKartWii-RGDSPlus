@@ -40,7 +40,7 @@ Se já tens os dados convertidos e a aplicação funcional, podes sobrepor `APPS
 | R2 ou X + direção no analógico | Truque na rampa |
 | Y, neutro ou para cima | Cavalinho na mota |
 | Y + analógico para baixo | Pedir fim do cavalinho |
-| Start / Select | Pausa / indicadores |
+| Start / Special | Pausa / indicadores |
 | Start + Select | Sair |
 | Volume + / − | Ajustar o som |
 
