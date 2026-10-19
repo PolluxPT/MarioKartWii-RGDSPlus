@@ -58,7 +58,10 @@ Do not copy the original disc image to the console. Avoid doubled paths such as 
 
 ## Icon
 
-If you have an icon, place it at `APPS/Imgs/MarioKartWii.png` **before preparing**. It will be copied to the ready-to-install folder. You can also add it afterwards at `PARA_CONSOLA/APPS/Imgs/MarioKartWii.png`. The application works without it.
+The icon is included at `APPS/Imgs/MarioKartWii.png`.
+The preparation tool automatically copies it to
+`PARA_CONSOLA/APPS/Imgs/MarioKartWii.png`.
+When installing, also merge the `Imgs` folder into the existing card folder.
 
 ## Troubleshooting
 
