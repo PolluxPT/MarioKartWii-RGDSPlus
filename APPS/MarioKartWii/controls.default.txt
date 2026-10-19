@@ -1,0 +1,14 @@
+# RGDS+ Nintendo button positions, configured by the v2 adapter.
+# A (right) = accelerate / confirm; B (bottom) = brake / back.
+# X (top) = trick; Y (left) = wheelie.
+gas = circle
+brake = cross
+drift = r1
+item = l1
+trick = triangle r2
+wheelie = square
+pause = start
+speedometer = select
+rearview = l2 l3
+firstperson = r3
+drift_adds_gas = no

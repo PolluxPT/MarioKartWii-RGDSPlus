@@ -1,0 +1,21 @@
+# Mario Kart Wii for RGDS+ - Final 1.0
+# Resolucao confirmada no Arranque: janela Wayland 1024x768.
+MKW_OUTPUT=0
+MKW_FB_WIDTH=1024
+MKW_FB_HEIGHT=768
+MKW_SCALE=1
+# Mantem a proporcao nativa 5:3, sem deformar o cenario.
+MKW_LAYOUT=fit
+# Tecto do ganho de audio; os niveis 0..10 seguem uma curva quadratica.
+# 0.35 reduz muito o primeiro nivel, mantendo margem para subir o volume.
+# Valores validos: 0.01 a 1.00. Para ainda menos som, experimenta 0.20.
+MKW_AUDIO_GAIN=0.35
+MKW_BOTTOM=0
+MKW_MINIMAP=1
+# Desliga apenas a iluminacao inferior enquanto o jogo corre no superior.
+# A iluminacao anterior e restaurada ao sair.
+MKW_LOWER_OFF=1
+# Sem o limite de 3 minutos da primeira versao. Start+Select sai do jogo.
+MKW_TEST_SECONDS=0
+# O mapeamento especifico e aplicado pela ponte apos identificar o GUID real.
+SDL_GAMECONTROLLERCONFIG=

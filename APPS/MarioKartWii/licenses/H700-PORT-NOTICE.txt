@@ -1,0 +1,11 @@
+Mario Kart Wii 3DS - H700 (muOS) port
+Port: Matrioshka Brain. The 3DS compatibility layer (shim/) and the H700 builder
+script are released under the MIT License.
+
+Contains: the MKW-3DS remake code (MiniBandit, MIT; original port by dudewhat, see
+MKW-3DS-NOTICE.txt), Kinoko (MIT), SDL3 (zlib), parts of libctru and citro3d (zlib),
+and the GNU C library (LGPL 2.1+, in libs/, unmodified; source at
+https://www.gnu.org/software/libc/).
+
+No Nintendo files are included. Mario Kart Wii is (c) Nintendo; you build the game
+files yourself from your own disc.
