@@ -28,6 +28,6 @@ O preparador original H700 e a interface PT/EN estão incluídos. As ferramentas
 
 ## Créditos / Credits
 
-Based on [MiniBandit/MKW-3DS](https://github.com/MiniBandit/MKW-3DS) and Matrioshka Brain's H700 port, retaining credits to dudewhat and third-party authors. RGDS+ adaptation and hardware testing with Filipe Baeta. See [THIRD_PARTY.md](THIRD_PARTY.md) and the original notices bundled with the application. The root MIT license only covers the RGDS+ additions.
+Based on [MiniBandit/MKW-3DS](https://github.com/MiniBandit/MKW-3DS) and Matrioshka Brain's H700 port, retaining credits to dudewhat and third-party authors. See [THIRD_PARTY.md](THIRD_PARTY.md) and the original notices bundled with the application. The root MIT license only covers the RGDS+ additions.
 
 This is a game-specific remake adaptation, not a Wii emulator. Not affiliated with Nintendo or ANBERNIC. Tested on RGDS+ Stock Linux.
