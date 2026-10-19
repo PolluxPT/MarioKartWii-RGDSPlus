@@ -1,3 +1,5 @@
+[⬇ Descarregar / Download](https://github.com/PolluxPT/MarioKartWii-RGDSPlus/releases/latest)
+
 # Mario Kart Wii for RGDS+
 
 A Stock Linux adaptation for ANBERNIC RGDS+, based on MiniBandit's **MKW-3DS** remake and Matrioshka Brain's H700 port, with RGDS+ hardware testing by Filipe Baeta. This is a game-specific native remake adaptation, not a general Wii emulator.
