@@ -58,7 +58,10 @@ Não copies a ROM original para a consola. Evita pastas duplicadas como `APPS/AP
 
 ## Ícone
 
-Se tiveres um ícone, coloca-o em `APPS/Imgs/MarioKartWii.png` **antes de preparar**. Ele será copiado para a pasta pronta para a consola. Também podes adicioná-lo depois em `PARA_CONSOLA/APPS/Imgs/MarioKartWii.png`. A aplicação funciona sem imagem.
+O ícone já está incluído em `APPS/Imgs/MarioKartWii.png`.
+O preparador copia-o automaticamente para
+`PARA_CONSOLA/APPS/Imgs/MarioKartWii.png`.
+Ao instalar, junta também a pasta `Imgs` à existente no cartão.
 
 ## Problemas
 
