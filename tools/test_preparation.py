@@ -129,10 +129,13 @@ class PackageTests(unittest.TestCase):
             icon = root / 'APPS/Imgs/MarioKartWii.png'
             icon.write_bytes(base64.b64decode('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aT1sAAAAASUVORK5CYII='))
             with contextlib.redirect_stdout(io.StringIO()): m.main()
-            with zipfile.ZipFile(root / 'dist/MarioKartWii_RGDSPlus_v1.1.0.zip') as z:
+            with zipfile.ZipFile(root / 'dist/MarioKartWii_RGDSPlus_v1.1.1.zip') as z:
                 names = set(z.namelist())
                 self.assertTrue({'PC/builder.zip', 'PC/preparar.py', 'PREPARAR_ROM.bat', 'INICIO_PT.md', 'START_HERE_EN.md', 'APPS/Imgs/MarioKartWii.png'} <= names)
                 self.assertFalse(any('private' in n for n in names))
+                self.assertFalse(any(n.split('/')[0] in {'Sources', 'tools', 'docs'} for n in names))
+                self.assertFalse({'Criar_ZIP.bat', 'README.md', 'README_PT.md', 'README_EN.md', '.gitignore', 'CHANGELOG.md', 'RELEASE_NOTES.md', 'VERSION'} & names)
+                self.assertEqual({n.split('/')[0] for n in names}, {'APPS', 'PC', 'ROM', 'INICIO_PT.md', 'START_HERE_EN.md', 'LICENSE', 'THIRD_PARTY.md', 'PREPARAR_ROM.bat', 'VERIFICAR_FERRAMENTAS.bat'})
             (root / 'ROM/user.rvz').write_text('PRIVATE')
             with self.assertRaises(ValueError): m.validate()
 

@@ -15,11 +15,8 @@ PLACEHOLDERS = {
 FORBIDDEN = {'.iso', '.rvz', '.wbfs', '.wbf1', '.wad', '.szs', '.brres', '.brstm', '.gmdl', '.t3x'}
 PC_FILES = ['PC/preparar.py', 'PC/Preparar_Jogo.bat', 'PC/builder.zip',
             'PC/builder.sha256', 'PC/Dolphin/LEIA_README.txt']
-ROOT_FILES = ['VERSION', 'README.md', 'README_PT.md', 'README_EN.md',
-              'INICIO_PT.md', 'START_HERE_EN.md', 'LEIA_PRIMEIRO.txt', 'LICENSE',
-              'THIRD_PARTY.md', 'CHANGELOG.md', 'RELEASE_NOTES.md',
-              'PREPARAR_ROM.bat', 'VERIFICAR_FERRAMENTAS.bat', 'Criar_ZIP.bat',
-              '.gitignore', 'ROM/LEIA_README.txt']
+ROOT_FILES = ['INICIO_PT.md', 'START_HERE_EN.md', 'LICENSE', 'THIRD_PARTY.md',
+              'PREPARAR_ROM.bat', 'VERIFICAR_FERRAMENTAS.bat', 'ROM/LEIA_README.txt']
 
 
 def validate():
@@ -52,7 +49,7 @@ def validate():
 def main():
     icon = validate()
     files = []
-    for folder in ['APPS', 'Sources', 'docs', 'tools']:
+    for folder in ['APPS']:
         files.extend(p for p in (ROOT / folder).rglob('*') if p.is_file())
     files.extend(ROOT / n for n in ROOT_FILES + PC_FILES)
     files = sorted(p for p in files if p.name not in {'Arranque.txt', 'Jogo.txt'}
