@@ -42,7 +42,7 @@ The final game application was tested on RGDS+ Stock Linux. Other models are unv
 | R2 or X + stick direction | Trick on a suitable ramp |
 | Y, neutral or up | Bike wheelie |
 | Y + stick down | Request end of wheelie |
-| Start / Select | Pause / HUD indicators |
+| Start / Special | Pause / HUD indicators |
 | Start + Select | Exit |
 | Volume + / − | Adjust sound |
 
