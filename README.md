@@ -10,7 +10,7 @@ Adaptação para RGDS+ Stock Linux / RGDS+ Stock Linux adaptation.
 
 ## PT — utilização da release
 
-1. Descarrega e extrai a **release completa v1.1.0**.
+1. Descarrega e extrai a **release completa v1.1.1**.
 2. Instala as ferramentas indicadas no guia, uma única vez.
 3. Coloca a tua ROM USA RMCE01 em **ROM**.
 4. Abre **PREPARAR_ROM.bat** e escolhe Português.
@@ -18,7 +18,7 @@ Adaptação para RGDS+ Stock Linux / RGDS+ Stock Linux adaptation.
 
 ## EN — release workflow
 
-1. Download and extract the **complete v1.1.0 release**.
+1. Download and extract the **complete v1.1.1 release**.
 2. Install the tools listed in the guide once.
 3. Put your USA RMCE01 disc image in **ROM**.
 4. Open **PREPARAR_ROM.bat** and select English.
