@@ -1,4 +1,4 @@
-[⬇ Descarregar / Download](https://github.com/PolluxPT/MarioKartWii-RGDSPlus/releases/latest)
+[![Download](https://img.shields.io/badge/Download-v1.1.1-blue?style=for-the-badge)](https://github.com/PolluxPT/MarioKartWii-RGDSPlus/releases/latest)
 
 # Mario Kart Wii for RGDS+
 
@@ -6,7 +6,7 @@ A Stock Linux adaptation for ANBERNIC RGDS+, based on MiniBandit's **MKW-3DS** r
 
 ## Download and prepare
 
-Use the **complete v1.1.0 release** under Releases. Follow [START_HERE_EN.md](START_HERE_EN.md) for the full first-time setup and conversion instructions.
+Use the **complete v1.1.1 release** under Releases. Follow [START_HERE_EN.md](START_HERE_EN.md) for the full first-time setup and conversion instructions.
 
 1. Install Python 3.13, Git, Node.js LTS and devkitPro/tex3ds as documented. RVZ inputs also need DolphinTool from the official Dolphin distribution.
 2. Place your own USA **RMCE01** ISO, WBFS or RVZ in `ROM`.
