@@ -1,3 +1,43 @@
+# Mario Kart Wii for RGDS+ — v1.1.1
+
+## English
+
+### Improvements
+- Added preservation of the original RGDS+ Stock Linux hardware volume.
+- Automatically restores the previous volume when exiting the game.
+- Added volume restoration verification and a guardian process for unexpected launcher termination.
+- Retained existing game-launching behaviour, audio configuration and lower-screen brightness restoration.
+
+### Installation
+**Existing users:** Replace `APPS/MarioKartWii.sh` with the updated launcher. No game-data reconversion is required.
+
+**New users:** Follow the existing installation and ROM preparation instructions included in the complete package.
+
+### Compatibility
+RGDS+ Stock Linux. Other devices and firmware versions remain unverified.
+
+No ROMs or converted copyrighted game assets are included.
+
+---
+
+## Português
+
+### Melhorias
+- Adicionada a preservação do volume original do sistema RGDS+ Stock Linux.
+- Reposição automática do volume anterior ao sair do jogo.
+- Adicionada verificação da reposição do volume e um processo de proteção para encerramentos inesperados.
+- Mantido o funcionamento do jogo, a configuração de áudio e a reposição da luminosidade do ecrã inferior.
+
+### Instalação
+**Utilizadores existentes:** Substituir `APPS/MarioKartWii.sh` pelo novo ficheiro. Não é necessário voltar a converter os dados do jogo.
+
+**Novos utilizadores:** Seguir as instruções de instalação e preparação da ROM incluídas no pacote completo.
+
+### Compatibilidade
+RGDS+ Stock Linux. Outros dispositivos e versões de firmware não foram validados.
+
+Não são incluídas ROMs nem dados convertidos do jogo protegidos por direitos de autor.
+
 # Mario Kart Wii for RGDS+ — Complete package v1.1.0
 
 ## Português
