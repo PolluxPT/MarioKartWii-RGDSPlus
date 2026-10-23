@@ -56,7 +56,7 @@ Add your PNG at `APPS/Imgs/MarioKartWii.png` before preparation. It is copied in
 
 RGDS+ adaptation sources are in `Sources`. The original builder is shipped in `PC/builder.zip` with a checksum and extracts automatically on first preparation. It is kept separate from local working data to make the public package easy to upload.
 
-Run `python tools/package_release.py`, or open `Criar_ZIP.bat`, to produce the complete `dist/MarioKartWii_RGDSPlus_v1.1.0.zip`. The installer includes the application, original builder archive, front-end, documentation and optional icon. It excludes your ROM, local dependencies, conversion cache and converted game files. See [publishing instructions](docs/PUBLISHING_EN.md).
+Run `python tools/package_release.py`, or open `Criar_ZIP.bat`, to produce the complete `dist/MarioKartWii_RGDSPlus_v1.1.1.zip`. The installer includes the application, original builder archive, front-end, documentation and optional icon. It excludes your ROM, local dependencies, conversion cache and converted game files. See [publishing instructions](docs/PUBLISHING_EN.md).
 
 The bundled H700 source snapshot is labelled **v1.21**, while the unchanged executable is labelled **v1.22**. That snapshot is not claimed to reproduce the executable exactly. Build instructions for the RGDS+ adapter are in `Sources/BUILD.txt`.
 
