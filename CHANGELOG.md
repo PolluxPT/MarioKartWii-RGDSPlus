@@ -1,5 +1,12 @@
 # Histórico
 
+## 1.1.1
+
+- Adicionada a preservação do volume original do sistema RGDS+ Stock Linux.
+- Reposição automática do volume anterior ao sair do jogo.
+- Adicionada verificação da reposição do volume e um processo de proteção para encerramentos inesperados.
+- Mantido o funcionamento do jogo, a configuração de áudio e a reposição da luminosidade do ecrã inferior.
+
 ## 1.1.0
 
 - Release completa com builder H700 original, coordenador PT/EN e guias de preparação nos dois idiomas.
