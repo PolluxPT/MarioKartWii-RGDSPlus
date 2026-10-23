@@ -6,7 +6,7 @@ Este projeto adapta o remake de MiniBandit e o port H700 de Matrioshka Brain. É
 
 ## Instalação e preparação da ROM
 
-Descarrega a **release completa v1.1.0**, extrai-a no PC e segue [INICIO_PT.md](INICIO_PT.md).
+Descarrega a **release completa v1.1.1**, extrai-a no PC e segue [INICIO_PT.md](INICIO_PT.md).
 
 1. Na primeira utilização, instala Python 3.13, Git, Node.js LTS e devkitPro/tex3ds conforme o guia. Para RVZ, prepara também o DolphinTool.
 2. Coloca a tua ROM americana **RMCE01** em `ROM` (ISO, WBFS ou RVZ).
@@ -48,7 +48,7 @@ Ver [guia de configuração](docs/CONFIGURACAO.md). A elegibilidade e a animaç�
 
 ## Compatibilidade e estado
 
-A aplicação final 1.0, incluída no pacote 1.1.0, reúne a versão final testada na **RGDS+ Stock Linux**. Imagem, comandos, som e jogabilidade foram confirmados pelo utilizador. Não foi testada noutros modelos ou sistemas. O desempenho e as limitações do remake podem variar com a pista e a situação.
+A aplicação final 1.0, incluída no pacote 1.1.1, reúne a versão final testada na **RGDS+ Stock Linux**. Imagem, comandos, som e jogabilidade foram confirmados pelo utilizador. Não foi testada noutros modelos ou sistemas. O desempenho e as limitações do remake podem variar com a pista e a situação.
 
 Ao reportar problemas, indica a versão de firmware e anexa `APPS/MarioKartWii/Arranque.txt` e `Jogo.txt`, quando existirem. Não envies ROMs nem pastas de dados do jogo.
 
