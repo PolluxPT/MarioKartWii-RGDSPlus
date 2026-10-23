@@ -46,7 +46,57 @@ run_binary "$APP_DIR/input_info"
 
 game_pid=
 timer_pid=
+guardian_pid=
 lower_saved=
+VOLUME_NODE=/sys/class/anbernic_misc/openbor_volume
+volume_saved=
+volume_active=0
+
+# RGDS+ Stock hardware volume is a level from 0 through 10.
+# Capture it once; do not replace the snapshot while the game is running.
+save_volume() {
+    if [ ! -r "$VOLUME_NODE" ] || [ ! -w "$VOLUME_NODE" ]; then
+        echo 'RGDS volume: hardware node unavailable; cannot preserve volume.'
+        return 1
+    fi
+    volume_saved=$(cat "$VOLUME_NODE") || return 1
+    case "$volume_saved" in
+        [0-9]|10) ;;
+        *) echo "RGDS volume: invalid initial level: $volume_saved"; return 1 ;;
+    esac
+    volume_active=1
+    echo "RGDS volume: saved initial level=$volume_saved/10"
+}
+
+restore_volume() {
+    [ "$volume_active" = 1 ] || return 0
+    if ! printf '%s\n' "$volume_saved" > "$VOLUME_NODE"; then
+        echo 'RGDS volume: restoration write failed.'
+        return 1
+    fi
+    volume_current=$(cat "$VOLUME_NODE") || return 1
+    if [ "$volume_current" != "$volume_saved" ]; then
+        echo "RGDS volume: verification failed (expected=$volume_saved, read=$volume_current)."
+        return 1
+    fi
+    volume_active=0
+    echo "RGDS volume: restored initial level=$volume_saved/10"
+}
+
+# Keep the original game usable if this firmware does not expose the node.
+save_volume || echo 'RGDS volume: continuing without hardware-volume snapshot.'
+
+# Independent recovery process: restore if the launcher disappears without cleanup.
+# The child gets a copy of the original snapshot, not subsequent game volume changes.
+if [ "$volume_active" = 1 ]; then
+    launcher_pid=$$
+    (
+        trap '' HUP
+        while kill -0 "$launcher_pid" 2>/dev/null; do sleep 1; done
+        restore_volume
+    ) &
+    guardian_pid=$!
+fi
 LOWER_LIGHT=/sys/class/backlight/backlight/brightness
 restore() {
     [ -z "$timer_pid" ] || kill "$timer_pid" 2>/dev/null
@@ -58,6 +108,11 @@ restore() {
     if [ -n "$lower_saved" ]; then
         printf '%s\n' "$lower_saved" > "$LOWER_LIGHT"
         echo "Lower screen restored: $lower_saved"
+    fi
+    restore_volume
+    if [ -n "$guardian_pid" ]; then
+        kill -TERM "$guardian_pid" 2>/dev/null || :
+        wait "$guardian_pid" 2>/dev/null || :
     fi
 }
 trap restore EXIT
