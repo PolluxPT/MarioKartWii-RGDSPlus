@@ -1,6 +1,6 @@
 # Mario Kart Wii for RGDS+
 
-[⬇ Descarregar / Download](https://github.com/PolluxPT/MarioKartWii-RGDSPlus/releases/latest)
+[![Download](https://img.shields.io/badge/Download-v1.4.2-blue?style=for-the-badge)](https://github.com/PolluxPT/MarioKartWii-RGDSPlus/releases/latest)
 
 Adaptação para RGDS+ Stock Linux / RGDS+ Stock Linux adaptation.
 
